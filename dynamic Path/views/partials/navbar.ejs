@@ -1,0 +1,31 @@
+<nav class="bg-red-600 p-8  ">
+    <ul class="flex items-center  ">
+        
+        <li class="ml-5  rounded-lg text-md ">
+            <a href="/" class="text-white px-6 py-2 rounded-lg 
+             <%= currentPage === "index" ? " bg-red-400" : "hover:bg-red-400" %> font-bold ">airbnb</a>
+        </li>
+
+        <li class="ml-5  rounded-lg text-md ">
+            <a href="/homes" class="text-white px-6 py-2 rounded-lg 
+             <%= currentPage === "Home" ? " bg-red-400" : "hover:bg-red-400" %> font-bold ">Homes-list</a>
+        </li>
+        
+        <li class="ml-5  rounded-lg text-md">
+            <a href="/bookings" class="text-white px-4 py-2 rounded-lg 
+            <%= currentPage === "Bookings" ? " bg-red-400" : "hover:bg-red-400" %> font-bold ">Bookings</a>
+        </li>
+        <li class="ml-5  rounded-lg text-md">
+            <a href="/favourite" class="text-white px-4 py-2 rounded-lg 
+            <%= currentPage === "Favourite" ? " bg-red-400" : "hover:bg-red-400" %> font-bold ">Favourite</a>
+        </li>
+        <li class="ml-5  rounded-lg text-md">
+            <a href="/host/host-home-list" class="text-white px-4 py-2 rounded-lg 
+            <%= currentPage === "Host-list" ? " bg-red-400" : "hover:bg-red-400" %> font-bold ">Host-home-list</a>
+        </li>
+        <li class="ml-5  rounded-lg text-md">
+            <a href="/host/add-home" class="text-white px-4 py-2 rounded-lg 
+            <%= currentPage === "addHome" ? " bg-red-400" : "hover:bg-red-400" %> font-bold ">Add Home</a>
+        </li>
+    </ul>
+</nav>
