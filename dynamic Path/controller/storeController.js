@@ -54,7 +54,7 @@ exports.postAddToFavourite = (req, res, next) => {
     res.redirect("/favourite");
   });
 };
-// 
+//
 // Home Deatils Page
 exports.getHomeDetails = (req, res, next) => {
   const homeId = req.params.homeId;
@@ -70,5 +70,16 @@ exports.getHomeDetails = (req, res, next) => {
         currentPage: "Home",
       });
     }
+  });
+};
+// delete from favourite
+exports.removeToFavourite = (req, res, next) => {
+  const homeId = req.params.homeId;
+  console.log(homeId);
+  Favourite.deltebyId(homeId, (err) => {
+    if (err) {
+      console.log("File while marking error", err);
+    }
+    res.redirect("/favourite");
   });
 };
