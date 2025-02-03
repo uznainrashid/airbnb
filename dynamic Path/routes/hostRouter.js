@@ -7,10 +7,11 @@ const hostController = require("../controller/hostController");
 
 const hostRouter = express.Router();
 
-hostRouter.get("/add-home", hostController.getAddhome);
 hostRouter.get("/host-home-list", hostController.getHostHome);
+hostRouter.get("/add-home", hostController.getAddhome);
 hostRouter.post("/add-home", hostController.postAddhome);
 hostRouter.get("/edit-home/:homeId", hostController.getEditHome);
 hostRouter.post("/edit-home", hostController.postEditHome);
+hostRouter.post("/delete-home/:homeId", hostController.postDeleteHome)
 
 module.exports = hostRouter;
